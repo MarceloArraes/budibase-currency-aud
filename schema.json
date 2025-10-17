@@ -1,0 +1,46 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "budibase-currency-aud",
+    "friendlyName": "CurrencyAUD",
+    "description": "An input for AUD currency that saves as a number.",
+    "icon": "Money",
+    "settings": [
+      {
+        "type": "field/number",
+        "label": "Field",
+        "key": "field",
+        "required": true
+      },
+      {
+        "type": "text",
+        "label": "Label",
+        "key": "label"
+      },
+      {
+        "type": "text",
+        "label": "Default value",
+        "key": "defaultValue",
+        "defaultValue": 0
+      },
+      {
+        "type": "event",
+        "label": "On change",
+        "key": "onChange",
+        "context": [
+          {
+            "label": "Field Value",
+            "key": "value"
+          }
+        ]
+      },
+      {
+        "type": "boolean",
+        "label": "Disabled",
+        "key": "disabled",
+        "defaultValue": false
+      }
+    ]
+  }
+}
