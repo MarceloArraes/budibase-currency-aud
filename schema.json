@@ -41,6 +41,26 @@
         "key": "disabled",
         "defaultValue": false
       }
+    ],
+    "styles": [
+      {
+        "key": "width",
+        "label": "Width",
+        "type": "text",
+        "defaultValue": "100%"
+      },
+      {
+        "key": "height",
+        "label": "Height",
+        "type": "text",
+        "defaultValue": "var(--spectrum-global-dimension-size-300)"
+      },
+      {
+        "key": "margin",
+        "label": "Margin",
+        "type": "four-way-input",
+        "defaultValue": "0px"
+      }
     ]
   }
 }
