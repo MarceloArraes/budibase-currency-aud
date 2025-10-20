@@ -24,7 +24,7 @@ This component was developed to provide a much-needed, user-friendly way to hand
 
 ## Installation
 
-1.  Go to the [Releases page](https://github.com/MarceloArraes/budibase-currency-input/releases) of your GitHub repository. *(Note: You'll need to create a release and upload the built file there)*.
+1.  Go to the [Releases page](https://github.com/MarceloArraes/budibase-currency-input/releases) of your GitHub repository.
 2.  Download the latest `budibase-currency-input-[version].tar.gz` file.
 3.  In your Budibase builder, navigate to the **Admin** section (`/portal`).
 4.  Go to **Plugins** and click the **Add Plugin** button.
