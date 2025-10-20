@@ -1,7 +1,7 @@
 {
-  "name": "budibase-currency-aud",
-  "version": "1.0.0",
-  "description": "An input for AUD currency that saves as a number.",
+  "name": "budibase-currency-input",
+  "version": "1.0.1",
+  "description": "A dynamic currency input that saves as a number.",
   "license": "MIT",
   "svelte": "index.js",
   "module": "dist/plugin.min.js",

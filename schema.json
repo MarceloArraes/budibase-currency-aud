@@ -2,9 +2,9 @@
   "type": "component",
   "metadata": {},
   "schema": {
-    "name": "budibase-currency-aud",
-    "friendlyName": "CurrencyAUD",
-    "description": "An input for AUD currency that saves as a number.",
+    "name": "budibase-currency-input",
+    "friendlyName": "Currency Input",
+    "description": "An input for various currencies that saves as a number.",
     "icon": "Money",
     "settings": [
       {
@@ -17,6 +17,34 @@
         "type": "text",
         "label": "Label",
         "key": "label"
+      },
+    {
+        "key": "currency",
+        "label": "Currency",
+        "type": "select",
+        "defaultValue": "AUD",
+        "options": [
+          { "label": "Australian Dollar (AUD)", "value": "AUD" },
+          { "label": "Brazilian Real (BRL)", "value": "BRL" },
+          { "label": "British Pound (GBP)", "value": "GBP" },
+          { "label": "Canadian Dollar (CAD)", "value": "CAD" },
+          { "label": "Chinese Yuan (CNY)", "value": "CNY" },
+          { "label": "Euro (EUR)", "value": "EUR" },
+          { "label": "Hong Kong Dollar (HKD)", "value": "HKD" },
+          { "label": "Indian Rupee (INR)", "value": "INR" },
+          { "label": "Japanese Yen (JPY)", "value": "JPY" },
+          { "label": "Mexican Peso (MXN)", "value": "MXN" },
+          { "label": "New Zealand Dollar (NZD)", "value": "NZD" },
+          { "label": "Norwegian Krone (NOK)", "value": "NOK" },
+          { "label": "Russian Ruble (RUB)", "value": "RUB" },
+          { "label": "Singapore Dollar (SGD)", "value": "SGD" },
+          { "label": "South African Rand (ZAR)", "value": "ZAR" },
+          { "label": "South Korean Won (KRW)", "value": "KRW" },
+          { "label": "Swedish Krona (SEK)", "value": "SEK" },
+          { "label": "Swiss Franc (CHF)", "value": "CHF" },
+          { "label": "Turkish Lira (TRY)", "value": "TRY" },
+          { "label": "US Dollar (USD)", "value": "USD" }
+        ]
       },
       {
         "type": "text",
