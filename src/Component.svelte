@@ -1,6 +1,5 @@
 <script>
   import { getContext, onMount, onDestroy } from "svelte";
-
   // Get SDK and form contexts
   const { styleable } = getContext('sdk');
   const component = getContext('component');
@@ -12,15 +11,24 @@
   export let value = null;
   export let label = "Currency";
   export let disabled = false;
-  export let defaultValue = null;
+  export let defaultValue = 0;
   export let onChange;
   
   // 1. Add the new currency prop from the schema settings
   export let currency = "AUD";
 
+
+  const parse = (value) => {
+    let parsed = parseFloat(value)
+    if (parsed != null && !isNaN(parsed)) {
+      return parsed
+    }
+    return 0
+  }
+
   const formApi = formContext?.formApi;
   $: formStep = formStepContext ? $formStepContext || 1 : 1;
-  $: formField = formApi?.registerField(field, "number", defaultValue, disabled, null, formStep);
+  $: formField = formApi?.registerField(field, "number", parse(defaultValue), disabled, null, formStep);
 
   let fieldState;
   let fieldApi;
@@ -144,6 +152,7 @@ function getLocaleForCurrency(currencyCode) {
 </script>
 
 <div class="container" use:styleable={$component.styles}>
+
   <label for={id} class="spectrum-Body spectrum-Body--sizeS label">
     {label}
   </label>
@@ -151,6 +160,7 @@ function getLocaleForCurrency(currencyCode) {
     <input
       class="spectrum-Textfield input"
       style="text-align: right;"
+      value={parse(defaultValue)}
       {disabled}
       {id}
       type="text"

@@ -47,7 +47,7 @@
         ]
       },
       {
-        "type": "text",
+        "type": "number",
         "label": "Default value",
         "key": "defaultValue",
         "defaultValue": 0
